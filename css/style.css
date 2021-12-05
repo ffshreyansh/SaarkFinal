@@ -863,6 +863,11 @@ footer {
 /* ==============================================================
    RESERVE A SEAT
    ============================================================== */
+.profile-pic{
+  position: relative;
+  margin-left: 205px;
+  margin-top: 10px;
+}
 .reserve-block {
   padding: 24px 0; }
   .reserve-block h5 {
@@ -1931,3 +1936,4 @@ select.form-control:not([size]):not([multiple]) {
   /* Add a grey background color to the table header and on hover */
   background-color: #f1f1f1;
 }
+
