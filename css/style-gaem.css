@@ -1,0 +1,72 @@
+body {
+  background-color: #F5B041;
+}
+
+div{
+  display: inline-block;
+  color: white;
+}
+#heading {
+  font-size: 30px;
+  padding: 590px;
+
+}
+#moveButton {
+  position: absolute;
+  margin-left: 50px;
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  left: 50px;
+  top: 450px;
+}
+#mainPhoto {
+  padding-top: 100px;
+  width: 80px;
+  height: 80px;
+  position:absolute;
+}
+
+#finish {
+  border-left: 10px solid;
+  height: 500px;
+  margin-left: 1000px;
+}
+#status{
+  align-items: center;
+  margin-left: 580px;
+}
+#dollphoto {
+  padding-top: 100px;
+  width: 120px;
+  height: 120px;
+  position:absolute;
+}
+
+#guardphoto1 {
+  position:absolute;
+  width: 65px;
+  height: 70px;
+}
+#guardphoto2 {
+  position:absolute;
+  width: 65px;
+  height: 70px;
+  margin: 100px 200px;
+}
+#guardphoto3 {
+  position:absolute;
+  width: 65px;
+  height: 70px;
+  margin: 250px 50px;
+}
+
+#guardphoto4 {
+  position:absolute;
+  width: 65px;
+  height: 70px;
+  margin: 190px 25px;
+}

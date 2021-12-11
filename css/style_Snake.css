@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background-color: #f9faf7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Back {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #e7602e;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    position: absolute;
+    margin-left: -1100px;
+  }
+  
+  .Back:hover {
+    background: #000000;
+    text-decoration: none;
+  }
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 110px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 305px;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 310px;
+}
+
+#board{
+    background-color: #f9faf7;
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid white;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    box-shadow: 10px 5px 5px rgb(179, 196, 160);
+    border-radius: 8px;
+}
+
+.head{
+    background-color: #d7263d;
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: #f46036;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background-color: #f46036;
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+  /* Popup container */
+  .Rules {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    padding-bottom: 50px;
+    margin-left: -1100px;
+    margin-bottom: 50px;
+    border: chocolate;
+    border-radius: 20px;
+  }
+  
+  /* The actual popup (appears on top) */
+  .Rules .Rulestext {
+    visibility: hidden;
+    width: 300px;
+    background-color: chocolate;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 32px 12px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: -35%;
+    margin-left: -80px;
+    box-shadow: black;
+  }
+  
+  /* Popup arrow */
+  .Rules .Rulestext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: chocolate transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .Rules .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
